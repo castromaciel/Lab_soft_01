@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table{
+  border-collapse: collapse;
+}
+caption{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+th, td{
+  border: 1px solid black;
+  padding: 1em;
+}
+
+th:hover,
+td:hover{
+  background-color: rgb(202, 199, 199);
+}
+
+td{
+  text-align: center;
+}

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 .anclas{
   display: flex;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,30 +23,41 @@
 
 header {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 1em;
   background-color: rgb(169, 169, 169);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header figure{
   padding: 0 1em 0 1em;
 }
 
+header figure img {
+  height: 50px;
+  width: 50px;
+  border-radius: 1em;
+}
+
 nav {
   background-color: rgb(24, 18, 18);
 }
 
-nav li {
-  display: inline-block;
-  padding: 1em;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
 }
 
-nav ul {
-  list-style: none;
+nav li {
+  padding: 1em;
 }
 
 nav a {
   padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-decoration: none;
 }
@@ -53,4 +65,161 @@ nav a {
 nav a:hover,
 nav a:focus {
   background-color: rgb(149, 149, 149);
+}
+
+.contenedor-principal{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-principal article{
+  padding: 1em;
+  margin: 1em;
+  width: 50%;
+  border: solid 4px rgb(24, 18, 18);
+}
+
+.contenedor-principal article h2{
+  font-family: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: .25em;
+}
+
+.contenedor-principal article p{
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.article-1, 
+.article-2{
+  border-radius: 0 1.5em 0 1.5em;
+}
+
+.article-1 p, 
+.article-2 p{
+  margin-bottom: .5em;
+}
+
+.article-1{
+  background-color: rgb(24, 18, 18);
+  color: white;
+}
+
+.article-1 figure{
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+}
+
+.article-2 figure{
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+}
+
+.article-1 figure figcaption,
+.article-2 figure figcaption{
+  font-style: oblique;
+}
+
+.contenedor-reparto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tarjeta-reparto{
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  border: solid 4px rgb(24, 18, 18);
+  border-radius: 1.5rem;
+}
+
+.tarjeta-reparto figure img{
+  padding: 2px;
+  width: 150px;
+  height: 150px;
+  border: 8px groove rgb(169, 169, 169);
+  border-radius: 100%;
+}
+.contenedor-tabla{
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+table{
+  margin: 0 auto;
+  border: 0.25em solid rgb(24, 18, 18);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table caption{
+  font-size: 1.5em;
+  margin: .75em;
+}
+th{
+  border: 0.15em solid rgb(24, 18, 18);
+  padding: .75em;
+}
+
+td{
+  text-align: center;
+  border: 0.15em solid rgb(24, 18, 18);
+  padding: .75em;
+}
+
+td:hover,
+th:hover{
+  background-color: rgb(185, 185, 185);
+}
+
+aside{
+  margin-top: 3.5em;
+  padding: .5em;
+  width: 30%;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside h2{
+  margin-bottom: .75em;
+}
+
+aside a{
+  font-size: 18px;
+  color: rgb(24, 18, 18);
+  text-decoration: none;
+}
+
+aside a:hover{
+  color: rgb(169, 169, 169);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(24, 18, 18);
+  color: white;
+  padding: .25em;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus{
+  color: rgb(149, 149, 149);
 }
