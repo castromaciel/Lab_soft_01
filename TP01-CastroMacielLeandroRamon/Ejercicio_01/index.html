@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- etiqueta que define el tipo de documento -->
+<html lang="es"> <!-- etiqueta que encierra todo el contenido de la página -->
+  <head> <!-- etiqueta en donde se incluye contenido que no es visible por los usuarios de la página -->
+    <meta name="author" description="Castro Maciel"> <!-- establece el autor de la página -->
+    <meta name="description" description="Trabajo practico 1 de laboratorio de software"> <!-- Establece una descripción de la página -->
+    <meta charset="UTF-8" /> <!-- establece los caracteres que el documento usará -->
+    <title>Desarrollo Web</title> <!-- define el titulo de la página -->
+    <link rel="stylesheet" href="/css/estilo.css" /> <!-- enlaza nuestro archivo de estilos a la pagina  -->
+  </head>
+  <body> <!-- Encierra todo el contendo que se desea mostrar al usuario -->
+    <header> <!-- sirve para identificar el contenido de tipo introductorio -->
+      <h1>Laboratorio I - TP01</h1> <!-- Elemento de encabezado; en este caso el más importante -->
+    </header>
+    <nav> <!-- sección en la cual se proporcionan enlaces de navegación -->
+      <ul> <!-- Elemento de lista desordenada -->
+        <li><a href="index.html" title="Págna de Inicio">Inicio</a></li> <!-- li: item de la lista; a:crea un enlace a otra página o a ubicaciones dentro de la misma. -->
+        <li><a href="/html/frontend.html" title="Página Frontend">Frontend</a></li>
+        <li><a href="/html/backend.html" title="Página de Backend">Backend</a></li>
+      </ul>
+    </nav>
+    <main> <!-- contiene los temas principales de la página -->
+      <section> <!-- define una sección del documento.  -->
+        <article> <!-- especifica contenido independiente -->
+          <h2>¿Qué es Back end y Front end?</h2> <!-- elemento de encabezado, 2do más importante -->
+          <figure> <!-- elemento de visualización de bloque -->
+            <img src="/img/desarrollo_web.jpg" alt="Desarrollo web"/> <!--Muestra una imágen en la página -->
+            <figcaption>Esquema desarrollo web</figcaption> <!-- titulo de la imagen -->
+          </figure>
+          <p>¿Has escuchado alguna vez estos términos? El Back end y el Front end son dos partes fundamentales de la programación de una aplicación web. En este artículo vamos a hablar sobre cada una de ellas y explicaremos las diferencias entre <strong>Front end</strong> end (el lado del cliente) y <strong>Back end</strong> (el lado del servidor).</p>
+          <!-- la etiqueta p, representa un parrafo; mientras que la etiqueta strong funciona para definir texto en negrita. -->
+          <h2>Full Stack</h2>
+          <p>Por otro lado, un desarrollador <i>Full Stack</i> es el encargado de manejar cada uno de los aspectos relacionados con la creación y el mantenimiento de una aplicación web. Para ello es fundamental que el desarrollador <i>Full Stack</i> tenga conocimientos en desarrollo Front-End y Back-End además de manejar diferentes sistemas operativos y lenguajes de programación.</p>
+          <!-- la etiqueta i muestra el texto en cursiva o italica -->
+        </article>
+    </section>
+    </main>
+    <aside> <!-- etiqueta que representa una sección de la página -->
+      <h2>Alumno</h2>
+      <h3>Apellido y Nombre:</h3> <!-- Elemento de encabezado -->
+      <p>Castro, Maciel Leandro Ramón</p>
+      <h3>Carrera:</h3>
+      <p>Ing. Informática</p>
+      <h3>Mail:</h3>
+      <p>castromaciel00@gmail.com</p>
+      <h3>Hobbie:</h3>
+      <p>Tocar el piano</p>
+    </aside>
+    <footer> <!-- Define el pié de página  -->
+      <a href="https://facetvirtual.facet.unt.edu.ar/course/view.php?id=224" target="_blank" title="Campus facetvirtual">
+        <img src="/img/facetvirtual.png" alt="logo facetvirtual" />
+      </a>
+    </footer>
+  </body>
+</html>

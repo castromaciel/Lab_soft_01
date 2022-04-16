@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+  </head>
+  <body>
+    <header>
+      <a href="#main" title="Ir al contenido" >Saltar al contenido</a>
+      <p>|</p>
+      <a href="#navegacion" title="Ir al menú de navegación" >Saltar a la navegación </a>
+    </header>
+    <nav id="navegacion">
+      <figure>
+        <img src="/img/logo_marvel_studios.png" alt="Logo de la página" class="nav-logo" />
+      </figure>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/html/registro.html">Registro</a></li>
+      </ul>
+    </nav>
+    <aside>
+      <h2>¿Algún inconveniente? ¡Contactános!</h2>
+      <form action="">
+        <label for="correo_usu">Correo</label>
+        <input type="email" name="correo" id="correo_usu" placeholder="ejemplo@ejemplo.com">
+        <label for="asunto">Asunto</label>
+        <input type="text" name="asunto" id="asunto" placeholder=Asunto">
+        <label for="consulta">Consulta</label>
+        <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Aquí escriba su consulta"></textarea>
+        <section>
+          <input type="submit" name="" id="" value="Enviar" class="boton">
+        </section>
+      </form>
+    </aside>
+    <main>
+      <section class="contenedor-sec">
+        <h1>Registrate en un solo paso</h1>
+        <form action="" id="contacto">
+          <label for="">Nombre y Apellido</label>
+          <input type="text" placeholder="Nombre y apellido">
+          <label for="">Correo</label>
+          <input type="email" name="" id="" placeholder="ejemplo@ejemplo.com">
+          <label for="">Contraseña</label>
+          <input type="password" name="" id="" placeholder="Contraseña">
+          <label for="">Fecha de nacimiento</label>
+          <input type="date" name="" id="" value="24-04-2000">
+          <label for="pais">País</label>
+          <select name="pais" id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Chile">Chile</option>
+            <option value="Ecuador">Ecuador</option>
+          </select>
+          <fieldset>
+            <legend>¿Desea recibir nuestras promociones y/o novedades?</legend>
+            <label for="">
+              <input type="radio" name="suscripcion" id="" checked> Si
+            </label>
+            <label for="">
+              <input type="radio" name="suscripcion" id=""> No
+            </label>
+          </fieldset>
+          <section>
+            <input type="submit" value="Suscribirse" class="boton">
+          </section>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copiright - Castro Maciel 2022</p>
+    </footer>
+  </body>
+</html>
