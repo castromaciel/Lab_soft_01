@@ -10,91 +10,84 @@
       <form action="">
         <h1 class="title">Encuesta</h1>
         <fieldset class="encuesta">
-        <fieldset class="contenedor-datos">
-          <legend class="datos">Datos Personales</legend>
-
-          <label for="nombre">Nombre:
-            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-          </label>
-          <label for="mail">Mail:
-            <input type="email" name="mail" id="mail" placeholder="Ingrese su casilla de mail">
-          </label>
-          <label for="fechaNac">Fecha de Nacimiento:
-            <input type="date" name="fechaNac" id="fechaNac" min="01-01-1910" max="12-03-2002" placeholder="01/01/2000">
-          </label>
-          <label for="celular">Celular (Con código de área, sin 0 ni 15):
-            <input type="number" name="celular" id="celular" placeholder="381234567">
-          </label>
-        </fieldset>
-        <fieldset class="contenedor-sobre-carrera">
-          <legend class="sobre-carrera">Sobre la carrera</legend>
-          <label for="carrera">Indique la carrera que se inscribió originalmente:
-            <select name="carrera" id="carrera">
-              <option value="Programador universitario">Programador universitario</option>
-              <option value="Ingeniería Informática">Ingeniería Informática</option>
-              <option value="Licenciatura en Informática">Licenciatura en Informática</option>
-            </select>
-          </label>
-          <fieldset>
-            <legend>¿Recursa la carrera?</legend>
-              <label for="opcionSi">
-                <input type="radio" name="opcionRecursa" id="opcionSi">Si
-              </label>
-              <label for="opcionNo">
-                <input type="radio" name="opcionRecursa" id="opcionNo">No
-              </label>
-          </fieldset>
-          <fieldset>
-            <legend>Materias que cursa:</legend>
-            <label for="algebra1">
-              <input type="checkbox" name="algebra1" id="algebra1">Álgebra 1
+          <fieldset class="contenedor-datos">
+            <legend class="datos">Datos Personales</legend>
+            <label for="nombre">Nombre:
+              <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" maxlength="50" required >
             </label>
-            <label for="calculo1">
-              <input type="checkbox" name="calculo1" id="calculo1">Cálculo 1
+            <label for="mail">Mail:
+              <input type="email" name="mail" id="mail" placeholder="Ingrese su casilla de mail" required>
             </label>
-            <label for="laboratorio1">
-              <input type="checkbox" name="laboratorio1" id="laboratorio1">Laboratorio 1
+            <label for="fechaNac">Fecha de Nacimiento:
+              <input type="date" name="fechaNac" value="2000-01-01" id="fechaNac">
             </label>
-            <label for="elementos">
-              <input type="checkbox" name="elementos" id="elementos">Elementos de computación y lógica
-            </label>
-            <label for="otro">
-              <input type="checkbox" name="otro" id="otro">Otras
+            <label for="celular">Celular (Con código de área, sin 0 ni 15):
+              <input type="tel" name="celular" id="celular" placeholder="381234567" pattern="[0-9]{10}">
             </label>
           </fieldset>
-        </fieldset>
-        <fieldset class="contenedor-sobre-materia">
-          <legend class="sobre-materia">Sobre la materia</legend>
-
-          <fieldset>
-            <legend>Indique el horario de la comisión práctica a la que asiste:</legend>
-            <label for="dia">Día:
-              <select name="dia" id="dia">
-                <option value="Lunes">Lunes</option>
-                <option value="Martes">Martes</option>
-                <option value="Miércoles">Miércoles</option>
-                <option value="Jueves">Jueves</option>
-                <option value="Viernes">Viernes</option>
-                <option value="Sábado">Sábado</option>
-                <option value="Domingo">Domingo</option>
+          <fieldset class="contenedor-sobre-carrera">
+            <legend class="sobre-carrera">Sobre la carrera</legend>
+            <label for="carrera">Indique la carrera que se inscribió originalmente:
+              <select name="carrera" id="carrera">
+                <option value="Programador universitario">Programador universitario</option>
+                <option value="Ingeniería Informática">Ingeniería Informática</option>
+                <option value="Licenciatura en Informática">Licenciatura en Informática</option>
               </select>
             </label>
-            <label for="hora">Hora:
-              <input type="time" name="hora" id="hora">
+            <fieldset>
+              <legend>¿Recursa la carrera?</legend>
+                <label for="opcionSi">
+                  <input type="radio" name="opcionRecursa" id="opcionSi">Si
+                </label>
+                <label for="opcionNo">
+                  <input type="radio" name="opcionRecursa" id="opcionNo" checked>No
+                </label>
+            </fieldset>
+            <fieldset>
+              <legend>Materias que cursa:</legend>
+              <label for="algebra1">
+                <input type="checkbox" name="algebra1" id="algebra1">Álgebra 1
+              </label>
+              <label for="calculo1">
+                <input type="checkbox" name="calculo1" id="calculo1">Cálculo 1
+              </label>
+              <label for="laboratorio1">
+                <input type="checkbox" name="laboratorio1" id="laboratorio1" checked>Laboratorio 1
+              </label>
+              <label for="elementos">
+                <input type="checkbox" name="elementos" id="elementos">Elementos de computación y lógica
+              </label>
+              <label for="otro">
+                <input type="checkbox" name="otro" id="otro">Otras
+              </label>
+            </fieldset>
+          </fieldset>
+          <fieldset class="contenedor-sobre-materia">
+            <legend class="sobre-materia">Sobre la materia</legend>
+            <fieldset>
+              <legend>Indique el horario de la comisión práctica a la que asiste:</legend>
+              <label for="dia">Día:
+                <select name="dia" id="dia">
+                  <option value="Jueves">Jueves</option>
+                  <option value="Viernes">Viernes</option>
+                </select>
+              </label>
+              <label for="hora">Hora:
+                <input type="time" name="hora" id="hora">
+              </label>
+            </fieldset>
+            <label for="satifaccion">Indique el grado de satisfacción respecto a la materia
+              (bajo) <input type="range" name="satifaccion" id="satifaccion" min="0" max="100" step="5"> (alto)
+            </label>
+            <label for="calificacion">¿Del 1 al 10 como calificaria el dictado de la materia?
+              <input type="number" name="calificacion" id="calificacion" min="1" max="10" value="5" required>
             </label>
           </fieldset>
-          <label for="satifaccion">Indique el grado de satisfacción respecto a la materia
-            (bajo) <input type="range" name="satifaccion" id="satifaccion"> (alto)
-          </label>
-          <label for="calificacion">¿Del 1 al 10 como calificaria el dictado de la materia?
-            <input type="number" name="calificacion" id="calificacion" min="1" max="10" value="5">
-          </label>
+          <section class="contenedor-botones">
+            <input type="submit" value="Enviar" class="boton">
+            <input type="submit" value="Limpiar" class="boton">
+          </section>
         </fieldset>
-        <section class="contenedor-botones">
-          <input type="submit" value="Enviar" class="boton">
-          <input type="submit" value="Limpiar" class="boton">
-        </section>
-      </fieldset>
       </form>
     </main>
   </body>
