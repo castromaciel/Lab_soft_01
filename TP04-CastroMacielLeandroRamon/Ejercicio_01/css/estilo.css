@@ -2,11 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
   display: flex;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: .25em;
 }
 
 header a{
@@ -16,7 +17,6 @@ header a{
 }
 
 nav{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +26,7 @@ nav{
 
 .nav-logo{
   width: 100px;
+  margin: 0 1em;
 }
 
 nav ul{
@@ -53,6 +54,13 @@ main{
   padding: 1em;
   background: rgb(121,9,21);
   background: radial-gradient(circle, rgba(121,9,21,1) 83%, rgba(1,0,24,1) 100%);
+}
+
+.title{
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
 }
 
 .contenedor-principal{
@@ -90,6 +98,11 @@ td, th{
   text-align: center;
 }
 
+caption{
+  font-size: 1.5em;
+  padding-bottom: .25em;
+}
+
 .contenedor-sec {
   color: rgb(255,255,255);
   display: flex;
@@ -110,8 +123,18 @@ label, fieldset{
   color: rgb(255, 255, 255);
 }
 
+fieldset{
+  display: flex;
+  justify-content: space-evenly;
+  padding: .25em;
+}
+
+fieldset legend{
+  text-align: center;
+}
+
 fieldset label{
-  padding: 1em;
+  margin: 1em;
 }
 
 form input, select{

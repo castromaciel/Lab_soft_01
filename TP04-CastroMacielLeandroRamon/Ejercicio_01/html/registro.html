@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
@@ -26,26 +26,26 @@
         <label for="correo_usu">Correo</label>
         <input type="email" name="correo" id="correo_usu" placeholder="ejemplo@ejemplo.com">
         <label for="asunto">Asunto</label>
-        <input type="text" name="asunto" id="asunto" placeholder=Asunto">
+        <input type="text" name="asunto" id="asunto" placeholder="Asunto">
         <label for="consulta">Consulta</label>
         <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Aquí escriba su consulta"></textarea>
         <section>
-          <input type="submit" name="" id="" value="Enviar" class="boton">
+          <input type="submit" value="Enviar" class="boton">
         </section>
       </form>
     </aside>
-    <main>
+    <main id="main">
       <section class="contenedor-sec">
         <h1>Registrate en un solo paso</h1>
         <form action="" id="contacto">
-          <label for="">Nombre y Apellido</label>
-          <input type="text" placeholder="Nombre y apellido">
-          <label for="">Correo</label>
-          <input type="email" name="" id="" placeholder="ejemplo@ejemplo.com">
-          <label for="">Contraseña</label>
-          <input type="password" name="" id="" placeholder="Contraseña">
-          <label for="">Fecha de nacimiento</label>
-          <input type="date" name="" id="" value="24-04-2000">
+          <label for="name">Nombre y Apellido</label>
+          <input type="text" placeholder="Nombre y apellido" id="name">
+          <label for="correo_usu2">Correo</label>
+          <input type="email" name="correo2" id="correo_usu2" placeholder="ejemplo@ejemplo.com">
+          <label for="password">Contraseña</label>
+          <input type="password" name="" id="password" placeholder="Contraseña">
+          <label for="fechaNac">Fecha de nacimiento</label>
+          <input type="date" name="fechaNac" id="fechaNac" min="1950-01-01" max="2002-12-31" value="24-04-2000">
           <label for="pais">País</label>
           <select name="pais" id="pais">
             <option value="Argentina">Argentina</option>
@@ -57,11 +57,11 @@
           </select>
           <fieldset>
             <legend>¿Desea recibir nuestras promociones y/o novedades?</legend>
-            <label for="">
-              <input type="radio" name="suscripcion" id="" checked> Si
+            <label for="confirmarPromo">
+              <input type="radio" name="suscripcion" id="confirmarPromo" checked> Si
             </label>
-            <label for="">
-              <input type="radio" name="suscripcion" id=""> No
+            <label for="rechazarPromo">
+              <input type="radio" name="suscripcion" id="rechazarPromo"> No
             </label>
           </fieldset>
           <section>
@@ -70,7 +70,6 @@
         </form>
       </section>
     </main>
-
     <footer>
       <p>Copiright - Castro Maciel 2022</p>
     </footer>

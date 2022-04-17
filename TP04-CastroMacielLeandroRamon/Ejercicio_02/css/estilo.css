@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title{
+  padding: .5em;
+  background-color: rgb(252, 216, 169);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.encuesta{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 1em 0 1em;
+  border: 4px solid rgb(252, 216, 169);
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.encuesta fieldset{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.encuesta label{
+  margin: .5em 0;
+}
+
+.encuesta input,
+.encuesta select{
+  border: 0;
+  padding: .5em;
+  margin: 0 .5em;
+  border-radius: .25em;
+}
+
+.encuesta fieldset fieldset{
+  padding: 0;
+  border: 0;
+}
+
+.contenedor-datos, .datos{
+  padding: .5em;
+  margin-top: 1em;
+  background-color: rgb(99, 99, 224);
+  border: 0;
+}
+
+.contenedor-sobre-carrera, .sobre-carrera{
+  padding: .5em;
+  margin-top: 1em;
+  background-color: rgb(190, 76, 76);
+  border: 0;
+}
+
+.contenedor-sobre-materia, .sobre-materia{
+  padding: .5em;
+  margin-top: 1em;
+  background-color: rgba(44, 173, 44, 1);
+  border: 0;
+}
+
+.datos,
+.sobre-carrera,
+.sobre-materia,
+.title {
+  text-align: center;
+}
+
+.contenedor-botones{
+  padding: 1em;
+}
+
+.contenedor-botones input{
+  margin: .5em;
+  padding: 1em;
+  background-color: rgb(99, 99, 224);
+  color: rgb(255, 255, 255);
+  border: 0;
+}
+
+.contenedor-botones input:hover,
+.contenedor-botones input:focus{
+  cursor: pointer;
+  background-color: rgb(71, 71, 164);
+}
