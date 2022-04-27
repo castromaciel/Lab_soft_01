@@ -1,0 +1,96 @@
+/**** CSS general ****/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+header{
+  display: flex;
+  background-color: rgb(0, 0, 77);
+  padding: .5em;
+}
+
+header p,
+header a{
+  color: rgb(255, 255, 255);
+  padding: 0.25em;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav li {
+  background-color: salmon;
+}
+
+#contenedor-menu  {
+  background-color: gold;
+}
+
+#contenedor-menu li {
+  list-style: none;
+}
+
+/**** CSS cel ****/
+
+@media screen and (min-width: 320px) {
+  #contenedor-menu img {
+    width: 10vw;
+  }
+
+  #contenedor-menu #cerrar {
+    display: none;
+  }
+
+  #contenedor-menu ul {
+    height: 0;
+    overflow: hidden;
+  }
+
+  #contenedor-menu:target #cerrar {
+    display: block;
+  }
+
+  #contenedor-menu:target #abrir {
+    display: none;
+  }
+
+  #contenedor-menu:target ul {
+    height: 40vh;
+    transition: height 1s ease 0s;
+  }
+
+  #contenedor-menu nav li {
+    margin-bottom: 0.1em;
+    height: 5vh;
+  }
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+/**** CSS PC ****/
+
+@media screen and (min-width: 1024px) {
+  #contenedor-menu img {
+    display: none;
+  }
+  
+  #contenedor-menu ul {
+    height: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  nav li{
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+}
+
+
+@media screen and (min-width: 1440px){
+
+}
