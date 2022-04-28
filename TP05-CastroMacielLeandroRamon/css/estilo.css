@@ -9,7 +9,7 @@
 header{
   display: flex;
   background-color: rgb(0, 0, 77);
-  padding: .5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header p,
@@ -17,11 +17,10 @@ header a{
   color: rgb(255, 255, 255);
   padding: 0.25em;
   text-decoration: none;
-  font-size: 1.1em;
 }
 
 nav li {
-  background-color: salmon;
+  background-color: rgb(0, 0, 77);
 }
 
 #contenedor-menu  {
@@ -29,12 +28,27 @@ nav li {
 }
 
 #contenedor-menu li {
+  padding: .3em;
   list-style: none;
+}
+
+#contenedor-menu li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.titulo{
+  text-align: center;
 }
 
 /**** CSS cel ****/
 
 @media screen and (min-width: 320px) {
+  header{
+    padding: .2em;
+  }
+
   #contenedor-menu img {
     width: 10vw;
   }
@@ -57,15 +71,56 @@ nav li {
   }
 
   #contenedor-menu:target ul {
-    height: 40vh;
+    height: 22vh;
     transition: height 1s ease 0s;
   }
 
   #contenedor-menu nav li {
     margin-bottom: 0.1em;
-    height: 5vh;
+  }
+
+  #contenido{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: .2em;
+    border: 1px solid black;
+    height: 100%;
+  }
+
+  .columna{
+    border: 1px solid rgb(0, 0, 77);
+    margin: 1em .2em
+  }
+
+  .columna article p{
+    padding: .1em;
+  }
+
+  .bombonera-1{
+    display: inline;
+  }
+
+  .bombonera-2{
+    display: none;
+  }
+  
+  .columna .figure-historia,
+  .columna .figure-estadio,
+  .columna .figure-super{
+    padding: .25em;
+    text-align: center;
+    font-style: oblique;
+  }
+
+  .columna .figure-historia{
+    float: right;
+  }
+  
+  .columna .figure-super{
+    float: left;
   }
 }
+
+/**** CSS Tablet ****/
 
 @media screen and (min-width: 768px){
 
@@ -79,13 +134,21 @@ nav li {
   }
   
   #contenedor-menu ul {
-    height: 20vw;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
+
   nav li{
     background-color: rgba(0, 0, 0, 0);
+  }
+  .bombonera-1{
+    display: none;
+  }
+  .bombonera-2{
+    width: 100%;
+    display: inline;
   }
 
 }
