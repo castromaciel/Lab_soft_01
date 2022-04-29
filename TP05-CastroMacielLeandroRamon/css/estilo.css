@@ -42,6 +42,45 @@ nav li {
   text-align: center;
   display: block;
 }
+.plantel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+  margin: 1em;
+  border: 1px solid black;
+}
+
+th,
+td{
+  padding: .2em;
+  border: 1px solid black;
+}
+
+.pos{
+  background-color: rgb(0, 0, 77);
+}
+
+.pos.arq{
+  color: rgb(255, 234, 42);
+}
+.pos.def{
+  color: rgb(109, 243, 255);
+}
+.pos.med{
+  color: rgb(60, 255, 1);
+}
+.pos.del{
+  color: rgb(255, 17, 17);
+}
+
+tfoot td{
+  text-align: center;
+}
+
 
 /**** CSS cel ****/
 
@@ -121,6 +160,11 @@ nav li {
   .columna .figure-super{
     float: left;
   }
+  
+  .desktop-table{
+    display: none;
+  }
+
 }
 
 /**** CSS Tablet ****/
@@ -155,6 +199,23 @@ nav li {
   .info-adicional{
     display: inline;
     margin: .5em 0;
+  }
+
+  .mobile-table{
+    display: none;
+  }
+
+  .desktop-table{
+    display: block;
+  }
+  
+  tr, td{
+    text-align: center;
+    padding: .4em 1.5em;
+  }
+
+  tfoot{
+    font-style: oblique;
   }
 
 }
