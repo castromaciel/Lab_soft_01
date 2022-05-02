@@ -21,7 +21,7 @@
 
       <nav id="navegacion">
         <ul>
-          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html">Columnas</a></li>
           <li><a href="/html/plantel.html">Plantel</a></li>
           <li><a href="/html/galeria.html">Galería</a></li>
           <li><a href="/html/consulta.html">Envíanos tu consulta</a></li>
@@ -29,16 +29,25 @@
       </nav>
     </section>
     <main id="contenido">
+      <h1 class="titulo">Envíanos tu pregunta</h1>
       <form action="">
-        <section>
-          <label for=""><input type="text"></label>
-          <label for=""><input type="text"></label>
-          <label for=""><input type="text"></label>
-          <label for=""><input type="text"></label>
+        <section class="formulario">
+          <label for="Nombre">Nombre 
+            <input type="text" name="Nombre" id="Nombre" required placeholder="Nombre"/>
+          </label >
+          <label for="Correo">Correo 
+            <input type="email" name="Correo" id="Correo" required placeholder="ejemplo@ejemplo.com"/>
+          </label>
+          <label for="Asunto">Asunto 
+            <input type="text" name="Asunto" id="Asunto" required placeholder="Asunto"/>
+          </label>
+          <label for="Mensaje">Mensaje 
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" required placeholder="Aquí va su mensaje"/></textarea>
+          </label>
         </section>
-        <section>
-          <input type="submit">
-          <input type="text">
+        <section class="contenedor-botones">
+          <input type="submit" class="boton-enviar" value="Enviar"/>
+          <input type="reset" class="boton-limpiar" value="Limpiar">
         </section>
       </form>
     </main>
